@@ -3,4 +3,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 10.8 100.8" enable-background="new 0 0 10.8 100.8" xml:space="preserve">
 <rect fill="#FFEA8E" width="10.8" height="64.4"/>
+<rect x="-2.2" fill="#FFEA8E" width="15.6" height="64.4"/>
+<rect x="-2.6" y="64.4" fill="#FFFFFF" width="17.1" height="36.4"/>
 </svg>
