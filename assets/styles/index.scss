@@ -1,2 +1,170 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$navy: #28395c;
+$yellow: #ffeb8e;
+$grey: #8f9194;
+$white: #fff;
+
+.break-bar {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 6px 12px 0;
+  width: 395px;
+}
+
+.button-holder {
+  margin: 0 auto;
+  padding-bottom: 12px;
+  width: 395px;
+}
+
+.btn {
+  background-color: $white !important;
+  border: 0 !important;
+  color: $navy !important;
+  font-size: 16px;
+  padding: 0;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  width: 95px;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  font-weight: bolder;
+  outline: none !important;
+}
+
+.about-me, .skills, .portfolio, .contact-me {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.landing-image-holder, .about-me, .skills-holder, .portfolio-holder, .contact-me-holder {
+  padding: 0;
+}
+
+.landing-image-holder {
+  background-color: $navy;
+  height: 500px;
+
+  h2 {
+    color: $white;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+}
+
+.about-me-holder, .portfolio-holder {
+
+  h2 {
+    color: $navy;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $navy;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $grey;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+
+.skills-holder, .contact-me-holder {
+  background-color: $grey;
+  color: $white;
+
+  h2 {
+    color: $navy;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $navy;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+
+nav {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  background: url('../header-sides.svg');
+  width: 100%;
+}
+
+.header-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+footer {
+  text-align: center;
+  background-color: $navy;
+  bottom: 0; // fixed position at the bottom of the scren
+  clear: both;
+  color: $white;
+  font-size: 14px;
+  position: fixed; // uses the bottom location
+  width: 100%; // keeps it the width of the page
+}
+
+.skills-item {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding: 24px 0 24px 0;
+  text-align: center;
+  width: 25%;
+}
+
+.skills-items-here {
+  width: 100%;
+  padding: 12px 0 12px 0;
+}
