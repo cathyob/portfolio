@@ -97,8 +97,8 @@ nav {
   width: 100%;
 }
 
-// NOTE all divs with content NOTE //
-.landing-image-holder, .spacing-holder, .skills-holder, .portfolio-holder, .contact-me-holder, .farewell-div-holder {
+// NOTE all divs with content except about me and portfolio NOTE //
+.landing-image-holder, .spacing-holder, .skills-holder, .contact-me-holder, .farewell-div-holder {
   padding: 24px;
   z-index: 2;
   margin: 0 auto;
@@ -214,8 +214,6 @@ nav {
 }
 
 // NOTE skill specific stuff NOTE //
-
-
 .skills-items-here {
   width: 100%;
   padding: 8px 0 8px 0;
@@ -228,6 +226,92 @@ nav {
   padding: 8px 0 8px 0;
   text-align: center;
   width: 33.3%;
+}
+
+
+
+// NOTE portfolio NOTE //
+.portfolio-holder {
+  background-color: $navy;
+  background-size: cover;
+  height: 100%;
+  padding: 24px;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio {
+    margin: 0 auto;
+    width: 80%;
+
+  h2 {
+    color: $white;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+
+.project-holder {
+  background-color: $white;
+  margin: 16px;
+  padding: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  width: 42%;
+
+  h3 {
+    color: $navy;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $navy;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+.project-holder:hover, .project-holder:focus, .project-holder:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.project-image {
+  width: 100%;
 }
 
 // NOTE contact me holder NOTE //
