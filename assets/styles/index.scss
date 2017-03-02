@@ -1,26 +1,59 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-// TODO Why are break-bars different sizes?
-
 $navy: #28395c;
 $yellow: #ffeb8e;
 $grey: #8f9194;
 $white: #fff;
 
-.break-bar {
-  display: block;
-  margin: 0 auto;
-  padding: 12px 6px 12px 0;
-  width: 395px;
+// NOTE HEADER STYLES HERE NOTE //
+// full header area with sides and center
+header {
+  background: url('../header-sides.svg');
+  width: 100%;
+  position: fixed; // setting fixed position so it remains at top during scrolling
+  top: 0; // will be at very top of window
+  z-index: 3; // setting on top of body content
 }
 
+// center header image with name
+.header-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+// NOTE BUTTON STYLES HERE NOTE //
+// container div of buttons
+nav {
+  background: white;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed; // setting fixed position so it remains at top during scrolling
+  top: 93px; // set height below header
+  width: 100%;
+  z-index: 3; // setting on top of body content
+}
+
+// center/no margin, add padding to bottom of nav bar, set width
 .button-holder {
   margin: 0 auto;
   padding-bottom: 12px;
   width: 395px;
 }
 
+// move About-me to left so truely centered
+.about-btn {
+  text-align: left
+}
+
+// move Contact-me to right so truely centered
+.contact-btn {
+  text-align: right
+}
+
+// add styles to button
 .btn {
   background-color: $white !important;
   border: 0 !important;
@@ -32,34 +65,85 @@ $white: #fff;
   width: 95px;
 }
 
+// when button is hovered, active, or focus make font different
 .btn:hover, .btn:active, .btn:focus {
   font-weight: bolder;
   outline: none !important;
 }
 
-.about-me, .skills, .portfolio, .contact-me {
+
+
+// NOTE BREAK BAR STYLE NOTE //
+// center, no margin, no padding, set width to be same as nav bar
+// .break-bar {
+//   display: block;
+//   margin: 0 auto;
+//   padding: 0;
+// }
+
+
+
+// NOTE BODY CONTENT ALL HERE NOTE//
+// NOTE BODY CONTENT ALL HERE NOTE//
+// NOTE BODY CONTENT ALL HERE NOTE//
+// NOTE content holder for all divs within NOTE//
+.content-holder {
+  background: url('../snowscenenavyfilter.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+// NOTE all divs with content NOTE //
+.landing-image-holder, .spacing-holder, .about-me, .skills-holder, .portfolio-holder, .contact-me-holder, .farewell-div-holder {
+  padding: 24px;
+  z-index: 2;
   margin: 0 auto;
+  min-height: 125px;
   text-align: center;
   width: 80%;
+  h2 {
+    color: $white;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
 }
 
-.landing-image-holder, .about-me, .skills-holder, .portfolio-holder, .contact-me-holder {
-  padding: 0;
-  z-index: 2;
-}
-
+// NOTE landing image holder NOTE //
 .landing-image-holder {
   height: 500px;
-  background: url('../snowscenenavyfilter.png');
-  background-position: center center;
   background-repeat: no-repeat;
   margin-top: 115px;
   text-align: center;
 
   h2 {
     color: $white;
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: bold;
     line-height: 500px;
     margin: 0;
     padding-bottom: 6px;
@@ -69,118 +153,55 @@ $white: #fff;
   }
 }
 
-.farewell-div-holder {
-  height: 500px;
-  max-height: 80%;
-  margin: 0 auto;
-  background: white;
-  border: none;
-  position: relative;
-
-  h2 {
-    color: $navy;
-    font-size: 24px;
-    line-height: 500px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-}
-
-.about-me-holder, .portfolio-holder {
-
-  margin: 0 auto;
-  background: white;
-  border: none;
-  position: relative;
-
-  h2 {
-    color: $navy;
-    font-size: 18px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    color: $navy;
-    font-size: 16px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-  }
-
-  p {
-    color: $grey;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-    padding-bottom: 4px;
-    padding-top: 4px;
-  }
-}
-
-.skills-holder, .contact-me-holder {
-  background: url('../snowscenenavyfilter.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  color: $white;
-
-  h2 {
-    color: $white;
-    font-size: 18px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    color: $white;
-    font-size: 16px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-  }
-
-  p {
-    color: $white;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-    padding-bottom: 4px;
-    padding-top: 4px;
-  }
-}
-
-nav {
-  background: white;
-  border: none;
-  margin: 0 auto;
+// NOTE spacing holder NOTE //
+.spacing-holder {
+  background-color: rgba(255,255,255,0.3);
+  clear: both;
   padding: 0;
-  position: fixed;
-  top: 93px;
   width: 100%;
-  z-index: 3;
 }
 
-header {
-  background: url('../header-sides.svg');
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 3;
+// NOTE about me image NOTE //
+.my-photo {
+  border: 2px solid $white;
+  height: 175px;
+  width: 175px;
 }
 
-.header-center {
+// NOTE skill specific stuff NOTE //
+.skills-items-here {
+  width: 100%;
+  padding: 12px 0 12px 0;
+}
+
+.skills-item {
+  color: $white;
   display: block;
-  margin: 0 auto;
-  max-width: 300px;
+  float: left;
+  padding: 24px 0 24px 0;
+  text-align: center;
+  width: 33.3%;
 }
 
+// NOTE contact me holder NOTE //
+.contact-me-holder {
+  height: 225px;
+}
+
+// NOTE farewell NOTE //
+.farewell-div-holder {
+  height: 300px;
+  padding: 0;
+  max-height: 80%;
+
+  h2 {
+    line-height: 300px;
+  }
+}
+
+
+
+// NOTE FOOTER STYLE NOTE //
 footer {
   text-align: center;
   background-color: $navy;
@@ -190,18 +211,4 @@ footer {
   font-size: 14px;
   position: fixed; // uses the bottom location
   width: 100%; // keeps it the width of the page
-}
-
-.skills-item {
-  display: block;
-  float: left;
-  margin: 0 auto;
-  padding: 24px 0 24px 0;
-  text-align: center;
-  width: 25%;
-}
-
-.skills-items-here {
-  width: 100%;
-  padding: 12px 0 12px 0;
 }
