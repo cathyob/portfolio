@@ -98,7 +98,7 @@ nav {
 }
 
 // NOTE all divs with content NOTE //
-.landing-image-holder, .spacing-holder, .about-me, .skills-holder, .portfolio-holder, .contact-me-holder, .farewell-div-holder {
+.landing-image-holder, .spacing-holder, .skills-holder, .portfolio-holder, .contact-me-holder, .farewell-div-holder {
   padding: 24px;
   z-index: 2;
   margin: 0 auto;
@@ -136,7 +136,6 @@ nav {
 // NOTE landing image holder NOTE //
 .landing-image-holder {
   height: 500px;
-  background-repeat: no-repeat;
   margin-top: 115px;
   text-align: center;
 
@@ -161,7 +160,52 @@ nav {
   width: 100%;
 }
 
-// NOTE about me image NOTE //
+// NOTE about me NOTE //
+.about-me-holder {
+  background: url('../snowscenenavyfilter2.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 24px;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+  .about-me {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  h2 {
+    color: $navy;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $navy;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $navy;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+
 .my-photo {
   border: 2px solid $white;
   height: 175px;
@@ -169,6 +213,8 @@ nav {
 }
 
 // NOTE skill specific stuff NOTE //
+
+
 .skills-items-here {
   width: 100%;
   padding: 12px 0 12px 0;
