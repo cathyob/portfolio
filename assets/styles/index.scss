@@ -277,8 +277,9 @@ nav {
 .project-holder {
   background-color: $white;
   display: inline-block;
-  height: 425px;
+  height: 375px;
   margin: 16px;
+  overflow-y: scroll;
   padding: 8px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -288,7 +289,7 @@ nav {
   -webkit-transition-property: transform;
   transition-property: transform;
   vertical-align: middle;
-  width: 42%;
+  width: 300px;
 
   h3 {
     color: $navy;
@@ -300,11 +301,13 @@ nav {
 
   p {
     color: $navy;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     margin: 0;
     padding-bottom: 4px;
-    padding-top: 4px;
+    padding-top: 8px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 .project-holder:hover, .project-holder:focus, .project-holder:active {
@@ -313,7 +316,7 @@ nav {
 }
 
 .project-image {
-  width: 100%;
+  width: 75%;
 }
 
 // NOTE contact me holder NOTE //
