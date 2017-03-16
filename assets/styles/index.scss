@@ -10,9 +10,9 @@ $white: #fff;
 // full header area with sides and center
 header {
   background: url('../header-sides.svg');
-  width: 100%;
   position: fixed; // setting fixed position so it remains at top during scrolling
   top: 0; // will be at very top of window
+  width: 100%;
   z-index: 3; // setting on top of body content
 }
 
@@ -26,8 +26,8 @@ header {
 // NOTE BUTTON STYLES HERE NOTE //
 // container div of buttons
 nav {
-  background: white;
-  border: none;
+  background: $white;
+  border: 0;
   margin: 0 auto;
   padding: 0;
   position: fixed; // setting fixed position so it remains at top during scrolling
@@ -45,12 +45,12 @@ nav {
 
 // move About-me to left so truely centered
 .about-btn {
-  text-align: left
+  text-align: left;
 }
 
 // move Contact-me to right so truely centered
 .contact-btn {
-  text-align: right
+  text-align: right;
 }
 
 // add styles to button
@@ -328,12 +328,15 @@ nav {
 
 // NOTE FOOTER STYLE NOTE //
 footer {
-  text-align: center;
   background-color: $navy;
-  bottom: 0; // fixed position at the bottom of the scren
+  // bottom: 0; // fixed position at the bottom of the scren
   clear: both;
   color: $white;
   font-size: 14px;
-  position: fixed; // uses the bottom location
+  height: 36px;
+  padding: 11px;
+  // position: fixed; // uses the bottom location
+  text-align: center;
   width: 100%; // keeps it the width of the page
+  // z-index: 3;
 }
