@@ -392,7 +392,28 @@ footer {
     width: 65px;
   }
 
-  // TODO fix portfolio width here TODO //
+  .portfolio {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+  .project-holder:hover,
+  .project-holder:focus,
+  .project-holder:active {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .project-holder {
+    height: 300px;
+    margin: 4px 0;
+    padding: 4px;
+    width: 95%;
+  }
+
+  .project-image {
+    width: 50%;
+  }
 }
 
 @media (max-width: 354px) {
