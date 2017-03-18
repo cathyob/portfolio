@@ -343,3 +343,17 @@ footer {
   width: 100%; // keeps it the width of the page
   // z-index: 3;
 }
+
+@media (max-width: 480px) {
+
+  .button-holder {
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 275px;
+  }
+
+  .btn {
+    font-size: 12px;
+    width: 65px;
+  }
+}
