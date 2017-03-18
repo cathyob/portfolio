@@ -201,7 +201,8 @@ nav {
 }
 
 .my-photo {
-  border: 2px solid $white;
+  border: 4px solid $white;
+  border-radius: 8px 24px;
   height: 175px;
   width: 175px;
 }
@@ -270,6 +271,7 @@ nav {
 // TODO make project max height, make description text smaller/scrollable TODO //
 .project-holder {
   background-color: $white;
+  border-radius: 8px 24px;
   display: inline-block;
   height: 375px;
   margin: 16px;
