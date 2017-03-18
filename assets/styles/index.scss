@@ -98,7 +98,11 @@ nav {
 }
 
 // NOTE all divs with content except about me and portfolio NOTE //
-.landing-image-holder, .spacing-holder, .skills-holder, .contact-me-holder, .farewell-div-holder {
+.landing-image-holder,
+.spacing-holder,
+.skills-holder,
+.contact-me-holder,
+.farewell-div-holder {
   padding: 24px;
   z-index: 2;
   margin: 0 auto;
@@ -169,11 +173,11 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding: 24px;
-  z-index: 2;
   margin: 0 auto;
+  padding: 24px;
   text-align: center;
   width: 100%;
+  z-index: 2;
 
   .about-me {
     margin: 0 auto;
@@ -215,8 +219,9 @@ nav {
 
 // NOTE skill specific stuff NOTE //
 .skills-items-here {
+  padding: 8px 0;
   width: 100%;
-  padding: 8px 0 8px 0;
+
 }
 
 .skills-item {
@@ -235,11 +240,11 @@ nav {
   background-color: $navy;
   background-size: cover;
   height: 100%;
-  padding: 24px;
-  z-index: 2;
   margin: 0 auto;
+  padding: 24px;
   text-align: center;
   width: 100%;
+  z-index: 2;
 }
 
 .portfolio {
@@ -305,12 +310,14 @@ nav {
     line-height: 18px;
     margin: 0;
     padding-bottom: 4px;
-    padding-top: 8px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 8px;
   }
 }
-.project-holder:hover, .project-holder:focus, .project-holder:active {
+.project-holder:hover,
+.project-holder:focus,
+.project-holder:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -348,20 +355,38 @@ footer {
 
   .skills-holder {
     padding: 24px;
-    z-index: 2;
-    margin: 0 auto;
-    text-align: center;
     width: 100%;
   }
 
   .skills-item {
-    color: $white;
-    display: block;
-    float: left;
     font-size: 16px;
-    padding: 4px 0 4px 0;
-    text-align: center;
-    width: 33.3%;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .landing-image-holder,
+  .spacing-holder,
+  .skills-holder,
+  .portfolio-holder,
+  .contact-me-holder,
+  .farewell-div-holder {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .about-me-holder {
+    padding: 12px;
+
+    .about-me {
+      width: 100%;
+    }
+  }
+
+  .skills-item {
+    font-size: 14px;
+    padding: 4px 0;
   }
 }
 
