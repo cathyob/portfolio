@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 324 100.8" enable-background="new 0 0 324 100.8" xml:space="preserve">
-<rect fill="#FFEA8E" width="324" height="64.4"/>
+	 viewBox="158.8 0 114.9 36" enable-background="new 158.8 0 114.9 36" xml:space="preserve">
+<rect x="158.1" fill="#FFEA8E" width="115.7" height="23"/>
 <g>
-	<defs>
-		<rect id="SVGID_1_" width="324" height="100.8"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		<text transform="matrix(1 0 0 1 13.1709 74.0148)" fill="#29395C" font-family="'HaloHandletter'" font-size="69">Cathy O’Brien</text>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="158.1" width="115.7" height="36"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<text transform="matrix(1 0 0 1 162.8465 26.4336)" fill="#29395C" font-family="'HaloHandletter'" font-size="24.6429">Cathy O’Brien</text>
+		</g>
 	</g>
 </g>
 </svg>
