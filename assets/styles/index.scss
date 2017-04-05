@@ -2,7 +2,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 $navy: #28395c;
-$yellow: #ffeb8e;
+$yellow: #f1d245;
 $grey: #8f9194;
 $white: #fff;
 
@@ -269,15 +269,13 @@ nav {
   }
 }
 
-// TODO make project max height, make description text smaller/scrollable TODO //
 .project-holder {
   background-color: $white;
   border-radius: 8px 24px;
   display: inline-block;
-  height: 375px;
+  height: 400px;
   margin: 16px;
   overflow-y: scroll;
-  padding: 8px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
@@ -315,7 +313,8 @@ nav {
 }
 
 .project-image {
-  width: 75%;
+  border-radius: 8px 24px 0 0;
+  width: 100%;
 }
 
 // NOTE contact me holder NOTE //
@@ -391,6 +390,29 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .content-holder {
+    background: url('../snowscenenavyfilter1-mobile.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-me-holder {
+    background: url('../snowscenenavyfilter2-mobile.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
 
   .button-holder {
     margin: 0 auto;
@@ -428,6 +450,29 @@ footer {
 }
 
 @media (max-width: 354px) {
+  .content-holder {
+    background: url('../snowscenenavyfilter1-mobile.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-me-holder {
+    background: url('../snowscenenavyfilter2-mobile.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
 
   // center header image with name
   .header-center {
