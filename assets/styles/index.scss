@@ -417,7 +417,6 @@ footer {
   .content-holder {
     background: url('../snowscenenavyfilter1-mobile.png');
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -439,7 +438,6 @@ footer {
   .about-me-holder {
     background: url('../snowscenenavyfilter2-mobile.png');
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -478,42 +476,13 @@ footer {
   }
 
   .project-holder {
-    height: 300px;
     margin: 8px 0;
-    padding: 4px;
     width: 95%;
   }
 
-  .project-image {
-    width: 50%;
-  }
 }
 
 @media (max-width: 354px) {
-  .content-holder {
-    background: url('../snowscenenavyfilter1-mobile.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-
-  .about-me-holder {
-    background: url('../snowscenenavyfilter2-mobile.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    margin: 0 auto;
-    padding: 24px;
-    text-align: center;
-    width: 100%;
-    z-index: 2;
-  }
-
   // center header image with name
   .header-center {
     max-width: 250px;
