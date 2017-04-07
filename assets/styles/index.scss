@@ -4,6 +4,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 $navy: #28395c;
 $yellow: #f1d245;
 $grey: #8f9194;
+$grey-blue: #4f5d79;
 $white: #fff;
 
 // NOTE HEADER STYLES HERE NOTE //
@@ -201,14 +202,6 @@ nav {
     text-transform: uppercase;
   }
 
-  h3 {
-    color: $navy;
-    font-size: 18px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-  }
-
   p {
     color: $navy;
     font-size: 16px;
@@ -229,7 +222,17 @@ nav {
 
 // NOTE skill specific stuff NOTE //
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 .skills-items-here {
+  clear: both;
   margin: auto;
   padding: 8px 0;
   width: 564px;
@@ -414,13 +417,18 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .content-holder {
+  .landing-image-holder,
+  .skills-holder,
+  .contact-me-holder {
     background: url('../snowscenenavyfilter1-mobile.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position-y: bottom;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+  }
+
+  .content-holder {
+    background: none;
+    background-color: $grey-blue;
   }
 
   .landing-text-holder {
@@ -437,15 +445,11 @@ footer {
 
   .about-me-holder {
     background: url('../snowscenenavyfilter2-mobile.png');
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    margin: 0 auto;
-    padding: 24px;
-    text-align: center;
     width: 100%;
-    z-index: 2;
   }
 
   .button-holder {
