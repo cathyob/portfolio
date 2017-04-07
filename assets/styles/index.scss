@@ -129,19 +129,37 @@ nav {
 .landing-image-holder {
   height: 500px;
   margin-top: 115px;
+  position: relative;
   text-align: center;
+}
 
-  h2 {
-    color: $white;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 500px;
-    margin: 0;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.landing-text-holder {
+  height: 150px;
+  margin-left: -215px;
+  margin-top: -75px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 430px;
+}
+
+.full-stack {
+  color: $white;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 8px;
+}
+
+.download {
+  color: $white;
+  outline: 1px solid $white;
+  padding: 8px;
+  margin: 8px;
+  width: 200px;
+  text-align: center;
 }
 
 // NOTE spacing holder NOTE //
@@ -194,6 +212,7 @@ nav {
   p {
     color: $navy;
     font-size: 16px;
+    font-weight: bold;
     line-height: 20px;
     margin: 0;
     padding-bottom:8px;
@@ -209,21 +228,27 @@ nav {
 }
 
 // NOTE skill specific stuff NOTE //
-.skills-items-here {
-  padding: 8px 0;
-  width: 100%;
 
+.skills-items-here {
+  margin: auto;
+  padding: 8px 0;
+  width: 564px;
 }
 
 .skills-item {
   color: $white;
-  display: block;
+  display: inline-block;
   float: left;
-  padding: 8px 0 8px 0;
+  outline: 1px solid $white;
+  padding: 8px;
+  margin: 8px;
+  width: 125px;
   text-align: center;
-  width: 33.3%;
 }
 
+.skills-item-last {
+  margin-bottom: 24px;
+}
 
 
 // NOTE portfolio NOTE //
@@ -342,11 +367,10 @@ footer {
   // z-index: 3;
 }
 
-@media (max-width: 614px) {
+@media (max-width: 775px) {
 
-  .skills-holder {
-    padding: 24px;
-    width: 100%;
+  .skills-items-here {
+    width: 423px;
   }
 
   .skills-item {
@@ -400,6 +424,18 @@ footer {
     width: 100%;
   }
 
+  .landing-text-holder {
+    margin-left: -165px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    width: 330px;
+  }
+
+  .full-stack {
+    font-size: 24px;
+  }
+
   .about-me-holder {
     background: url('../snowscenenavyfilter2-mobile.png');
     background-attachment: fixed;
@@ -423,6 +459,10 @@ footer {
   .btn {
     font-size: 12px;
     width: 65px;
+  }
+
+  .skills-items-here {
+    width: 282px;
   }
 
   .portfolio {
@@ -488,11 +528,17 @@ footer {
   .landing-image-holder {
     height: 415px;
     margin-top: 100px;
+  }
 
-    h2 {
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 415px;
-    }
+  .landing-text-holder {
+    margin-left: -150px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+  }
+
+  .full-stack {
+    font-size: 20px;
   }
 }
